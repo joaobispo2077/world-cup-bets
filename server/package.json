@@ -5,16 +5,20 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:migrate" : "npx prisma migrate dev",
+    "db:studio": "npx prisma studio"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^4.5.0",
+    "fastify": "^4.9.2"
+  },
   "devDependencies": {
+    "prisma": "^4.5.0",
     "tsx": "^3.11.0",
     "typescript": "^4.8.4"
-  },
-  "dependencies": {
-    "fastify": "^4.9.2"
   }
 }
