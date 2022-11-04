@@ -24,7 +24,7 @@ module.exports = {
   plugins: ["@typescript-eslint", "prettier", "import"],
   ignorePatterns: ["node_modules", "/*.js", "dist"],
   rules: {
-    camelcase: "error",
+    camelcase: "warn",
     "prettier/prettier": "error",
     "no-console": "error",
     "import/no-unresolved": "error",
